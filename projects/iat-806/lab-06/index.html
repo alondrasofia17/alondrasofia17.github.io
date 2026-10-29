@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Lab 06 - Balls from scratch</title>
+
+    <link rel="stylesheet" href="../../../style.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/p5.min.js"></script>
+    <script src="https://unpkg.com/ml5@1/dist/ml5.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <a class="site-name" href="../../../index.html">Alondra Guerra</a>
+
+      <nav>
+        <a href="../../../index.html">Home</a>
+        <a href="../../index.html">Projects</a>
+      </nav>
+    </header>
+
+    <main>
+      <p><a href="../index.html">← IAT 806</a></p>
+
+      <h1>Lab 06 - Balls from scratch</h1>
+
+      <p class="tagline">
+        An interactive animation with colorful moving balls.
+      </p>
+
+      <h2>My Sketch</h2>
+
+      <div id="sketch-holder"></div>
+
+      <h2>How It Works</h2>
+
+      <p>
+        In this lab, I created a Ball class from scratch using JavaScript and
+        p5.js. Each ball has its own position, color, and size. The balls move
+        randomly and change size throughout the animation.
+      </p>
+
+      <p>
+        I added mouse interaction so that clicking on a ball changes its color.
+        I also used ml5.js and the webcam to detect my body. The balls respond
+        to the body segmentation mask by changing color.
+      </p>
+
+      <h2>Reflection</h2>
+
+      <p>
+        The most challenging part was everything. This is still hard for me, I
+        needed help. For implementing body segmentation with ml5.js, I had to
+        revisit the reference material and check the browser console to
+        understand how the segmentation results were structured.
+      </p>
+    </main>
+
+    <footer>Alondra Guerra · IAT 806</footer>
+    <script src="Ball.js"></script>
+    <script src="sketch.js"></script>
+  </body>
+</html>
