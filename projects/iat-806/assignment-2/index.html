@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Pop the Balls! — Assignment 2</title>
+
+    <link rel="stylesheet" href="../../../style.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/p5.min.js"></script>
+    <script src="https://unpkg.com/ml5@1/dist/ml5.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <a class="site-name" href="../../../index.html"> Alondra Guerra </a>
+
+      <nav>
+        <a href="../../../index.html">Home</a>
+        <a href="../../index.html">Projects</a>
+      </nav>
+    </header>
+
+    <main>
+      <p><a href="../index.html">← IAT 806</a></p>
+
+      <h1>Pop the Balls! 🎈</h1>
+
+      <p class="tagline">Assignment 2 — Body Game</p>
+
+      <h2>My Game</h2>
+
+      <div id="sketch-holder"></div>
+
+      <h2>How to Play</h2>
+
+      <p>
+        Pop the Balls! is an interactive body-controlled game created using
+        p5.js and ml5.js. The webcam detects your body movements, allowing you
+        to pop colorful balls by moving your arms and hands.
+      </p>
+
+      <p>
+        Your goal is to pop 20 balls in 30 seconds. Each popped ball earns one
+        point. Reach 20 points before the timer runs out to win!
+      </p>
+
+      <h2>How It Works</h2>
+
+      <p>
+        The game uses the BodyPix body segmentation model to detect changes in
+        the player's silhouette. Each ball is an object created using a
+        JavaScript class. Balls are added and removed during gameplay, and the
+        game includes start, playing, and game-over states.
+      </p>
+
+      <p>
+        <a
+          href="https://github.com/alondrasofia17/alondrasofia17.github.io/tree/main/projects/iat-806/assignment-2"
+        >
+          View the code on GitHub
+        </a>
+      </p>
+    </main>
+
+    <footer>Alondra Guerra · IAT 806</footer>
+
+    <script src="Ball.js"></script>
+    <script src="sketch.js"></script>
+  </body>
+</html>
